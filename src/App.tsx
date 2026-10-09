@@ -13,9 +13,9 @@ const samplePortfolio: Portfolio[] = [
   {id:'sample-3',title:'Custom Obstacle Course',category:'Obstacle',description:'Rintangan dan checkpoint khusus dengan alur permainan yang menantang.',image_url:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85',is_published:true}
 ]
 const sampleProducts: Product[] = [
-  {id:'demo-1',name:'Summit Kit',description:'Paket sistem summit dan leaderboard untuk map Roblox.',category:'Kit',price:50000,stock:10,image_url:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80',is_published:true},
-  {id:'demo-2',name:'Custom Map',description:'Pembuatan map sesuai konsep dan kebutuhan.',category:'Map',price:150000,stock:5,image_url:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80',is_published:true},
-  {id:'demo-3',name:'Script & System',description:'Sistem Roblox yang disesuaikan dengan kebutuhan proyek.',category:'Script',price:75000,stock:8,image_url:'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80',is_published:true}
+  {id:'demo-1',name:'Summit Kit',description:'Paket sistem summit dan leaderboard untuk map Roblox.',category:'Kit',price:300000,stock:100,image_url:'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=80',is_published:true},
+  {id:'demo-2',name:'Custom Map',description:'Pembuatan map sesuai konsep dan kebutuhan.',category:'Map',price:150000-1200000,stock:100,image_url:'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=700&q=80',is_published:true},
+  {id:'demo-3',name:'Script & System',description:'Sistem Roblox yang disesuaikan dengan kebutuhan proyek.',category:'Script',price:-,stock:-,image_url:'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80',is_published:true}
 ]
 const services = [
   ['Map Gunung','Map pendakian dengan jalur, checkpoint, basecamp, dan summit.'],['Map Club & DJ','Map club dengan lighting, panggung, dan ambience sesuai konsep.'],['Obstacle & Hangout','Map obstacle, hangout, dan area komunitas custom.'],['Script & System','Pembuatan sistem, UI, leaderboard, dan fitur gameplay.'],['Summit Kit & Bug Fix','Pemasangan kit, penyesuaian sistem, dan bantuan perbaikan bug.'],['Custom Request','Kebutuhan khusus dibahas sesuai konsep dan anggaran proyek.']
