@@ -144,31 +144,13 @@ export default function App() {
 
       <section id="products" className="section wrap products-section"><div className="section-head"><div><div className="section-kicker">04 / PRODUCTS & STOCK</div><h2>{english?'Tools for your next build':'Produk & layanan.'}</h2></div><p>{english?'Explore available kits and services. Contact us to confirm scope and availability.':'Lihat kit dan layanan yang tersedia. Hubungi kami untuk memastikan detail dan ketersediaan.'}</p></div><div className="products-grid">{products.map((p)=><article className="product-card" key={p.id}><div className="product-image">{p.image_url?<img src={p.image_url} alt={p.name} loading="lazy"/>:<Package/>}<span className={p.stock>0?'stock-badge':'stock-badge sold'}>{p.stock>0?'Tersedia':'Habis'}</span></div><div className="product-details"><span className="card-category">{p.category}</span><h3>{p.name}</h3><p>{p.description}</p><div className="product-bottom"><strong>{money(p.price)}</strong><a href={settings.discord_url||'#contact'} target={settings.discord_url?'_blank':undefined} rel="noreferrer">Tanya <ArrowRight size={14}/></a></div></div></article>)}</div><div className="products-foot"><span><ShieldCheck size={16}/> Detail pesanan dikonfirmasi sebelum pengerjaan.</span><a href="#contact">Cara pemesanan <ArrowRight size={15}/></a></div><div className="data-note">{productRowsFromDb?'Live data · Supabase':'Preview products · Perbarui harga dan produk lewat Dashboard Owner.'}</div></section>
 
-      
-<div className="contact-actions">
-  <a
-    className="button-primary"
-    href="https://discord.com/users/1254015885425770587"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    DM Discord 1 <ExternalLink size={16} />
-  </a>
-
-  <a
-    className="button-primary"
-    href="https://discord.com/users/565003063178559498"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    DM Discord 2 <ExternalLink size={16} />
-  </a>
-
-  <a className="button-secondary" href="#home">
-    Kembali ke atas <ArrowDownRight size={16} />
-  </a>
-</div>
-      <div className="wrap contact-wrap"><div><div className="section-kicker">05 / LET'S BUILD SOMETHING</div><h2>{english?'Have a project in mind?':'Punya ide untuk diwujudkan?'}</h2><p>{settings.contact_text||'Ceritakan kebutuhanmu. Kita bahas konsep, fitur, dan langkah pengerjaannya.'}</p></div><div className="contact-actions">{settings.discord_url?<a className="button-primary" href={settings.discord_url} target="_blank" rel="noreferrer">Hubungi via Discord <ExternalLink size={16}/></a>:<a className="button-primary" href="https://discord.com/app" target="_blank" rel="noreferrer">Buka Discord <ExternalLink size={16}/></a>}<a className="button-secondary" href="#home">Kembali ke atas <ArrowDownRight size={16}/></a></div></div></section>
+      <section id="contact" className="contact-section"><div className="wrap contact-wrap"><div><div className="section-kicker">05 / LET'S BUILD SOMETHING</div><h2>{english?'Have a project in mind?':'Punya ide untuk diwujudkan?'}</h2><p>{settings.contact_text||'Ceritakan kebutuhanmu. Kita bahas konsep, fitur, dan langkah pengerjaannya.'}</p></div>
+        <div className="contact-actions">
+          <a className="button-primary" href="https://discord.com/users/1254015885425770587" target="_blank" rel="noopener noreferrer">DM Discord 1 <ExternalLink size={16}/></a>
+          <a className="button-primary" href="https://discord.com/users/565003063178559498" target="_blank" rel="noopener noreferrer">DM Discord 2 <ExternalLink size={16}/></a>
+          <a className="button-secondary" href="#home">Kembali ke atas <ArrowDownRight size={16}/></a>
+        </div>
+      </div></section>
     </main>
     <footer className="wrap footer"><a className="footer-brand" href="#home"><img src="/gift-avatar.gif" alt=""/> ! DimV Studio</a><span>© {new Date().getFullYear()} ! DimV Studio. All rights reserved.</span><span>BUILD · CREATE · BEYOND</span></footer>
 
